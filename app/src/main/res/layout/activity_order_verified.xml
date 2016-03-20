@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.example.administrator.userrentcar.OrderVerifiedActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="车辆已安排"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_orange_light"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/t_takeplace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/takeplace"
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/takeplace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/t_taketime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/taketime"
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <EditText
+                        android:id="@+id/taketime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="租车费用："
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/totalrentprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="保险费用："
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/totalinsureprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/t_delivercar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delivercar"
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/delivercar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="共      计："
+                        android:textSize="26dp"
+                        android:textColor="@android:color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/totalprice"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="28dp"
+                        android:textColor="@android:color/holo_red_light"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车牌号码："
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/licensenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="26dp"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话："
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/contactnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13312345678"
+                        android:textSize="24dp"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:autoLink="none"
+                        android:linksClickable="true"/>
+                </TableRow>
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/car"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp">
+
+                <Button
+                    android:id="@+id/phoneinquiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phoneinquiry"
+                    android:textSize="24dp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/phonegreen"/>
+
+                <Button
+                    android:id="@+id/paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/phoneinquiry"
+                    android:layout_toEndOf="@+id/phoneinquiry"
+                    android:text="已支付"
+                    android:textSize="24dp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/orenge" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

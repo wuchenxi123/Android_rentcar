@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.example.administrator.userrentcar.ReturnActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <TextView
+                        android:text="当前车型："
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+
+                    <EditText
+                        android:id="@+id/currentcartype"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:hint="帕萨特"
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="价       格："
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="费       用："
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TableRow>
+
+                            <TextView
+                                android:text="当前已产生费用"
+                                android:textSize="24dp"
+                                android:textColor="@android:color/black"/>
+
+                            <TextView
+                                android:id="@+id/t_currentprice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="24dp"
+                                android:textColor="@android:color/holo_red_light"/>
+
+                            <TextView
+                                android:text="@string/yuan"
+                                android:textSize="24dp"
+                                android:textColor="@android:color/black"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:text="预计共产生费用"
+                                android:textSize="24dp"
+                                android:textColor="@android:color/black"/>
+
+                            <TextView
+                                android:id="@+id/t_predictprice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="24dp"
+                                android:textColor="@android:color/holo_red_light"/>
+
+                            <TextView
+                                android:text="@string/yuan"
+                                android:textSize="24dp"
+                                android:textColor="@android:color/black"/>
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="@string/returnplace"
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TableLayout>
+
+                        <TableRow>
+                            <Spinner
+                                android:id="@+id/returntype"
+                                android:layout_height="30dp"
+                                android:layout_width="match_parent">
+                            </Spinner>
+                        </TableRow>
+
+                        <TableRow>
+
+                            <Spinner
+                                android:id="@+id/returnaddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="10dp">
+                            </Spinner>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="@string/returntime"
+                        android:textSize="24dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TableLayout>
+
+                        <TableRow>
+
+                            <DatePicker
+                                android:id="@+id/returndate"
+                                android:layout_width="232dp"
+                                android:layout_height="60dp"
+                                android:layout_alignParentTop="true"
+                               ></DatePicker>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="10dp">
+
+                            <TimePicker
+                                android:id="@+id/returntime"
+                                android:layout_width="232dp"
+                                android:layout_gravity="right"
+                                android:layout_height="60dp"></TimePicker>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:text="@string/submit"
+                android:textSize="24dp"
+                android:textColor="@android:color/white"
+                android:background="@color/orenge"/>
+
+            <Button
+                android:id="@+id/phonereturn"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/phonereturn"
+                android:textSize="30dp"
+                android:textColor="@android:color/white"
+                android:background="@color/phonegreen"/>
+
+        </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

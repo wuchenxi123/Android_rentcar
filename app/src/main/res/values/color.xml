@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <color name="white">#ffffff</color> <!-- 白色 -->
+    <color name="azure">#f0ffff</color> <!-- 天蓝色 -->
+    <color name="aquamarine">#7fffd4</color> <!-- 碧绿色 -->
+    <color name="chartreuse">#7fff00</color> <!-- 黄绿色 -->
+    <color name="lawngreen">#7cfc00</color> <!-- 草绿色 -->
+    <color name="orange">#ffa500</color> <!-- 橙色 -->
+    <color name="orangered">#ff4500</color> <!-- 红橙色 -->
+    <color name="bisque">#ffe4c4</color> <!-- 桔黄色 -->
+    <color name="lightyellow">#ffffe0</color> <!-- 亮黄色 -->
+    <color name="yellow">#ffff00</color> <!-- 黄色 -->
+    <color name="black">#ff000000</color>
+    <color name="gray">#ffbbbbbb</color>
+    <color name="graylight">#65747C</color>
+    <color name="blue">#2b67e4</color>
+    <color name="orenge">#F7621A</color>
+    <color name="phonegreen">#24C224</color>
+
+</resources>

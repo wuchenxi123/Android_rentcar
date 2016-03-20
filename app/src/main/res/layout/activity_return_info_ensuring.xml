@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        tools:context="com.example.administrator.userrentcar.ReturnInfoEnsuringActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_orange_light"
+            android:gravity="center"
+            android:text="还车信息确认中......"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:text="当前车牌："
+                        android:textColor="@android:color/black"
+                        android:textSize="24dp" />
+
+                    <EditText
+                        android:id="@+id/currentcarlpnum"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="24dp"
+                        android:enabled="false"/>
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="价       格："
+                        android:textColor="@android:color/black"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textSize="24dp" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="费       用："
+                        android:textColor="@android:color/black"
+                        android:textSize="24dp" />
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TableRow>
+
+                            <TextView
+                                android:text="当前产生"
+                                android:textColor="@android:color/black"
+                                android:textSize="24dp" />
+
+                            <TextView
+                                android:id="@+id/t_currentprice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/holo_red_light"
+                                android:textSize="24dp" />
+
+                            <TextView
+                                android:text="@string/yuan"
+                                android:textColor="@android:color/black"
+                                android:textSize="24dp" />
+                        </TableRow>
+
+                        <TableRow android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:text="预计产生"
+                                android:textColor="@android:color/black"
+                                android:textSize="24dp" />
+
+                            <TextView
+                                android:id="@+id/t_predictprice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/holo_red_light"
+                                android:textSize="24dp" />
+
+                            <TextView
+                                android:text="@string/yuan"
+                                android:textColor="@android:color/black"
+                                android:textSize="24dp" />
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+
+                <TableRow android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:text="@string/returnplace"
+                        android:textColor="@android:color/black"
+                        android:textSize="24dp" />
+
+                    <TableLayout>
+
+                        <TableRow>
+
+                            <EditText
+                                android:id="@+id/returntype"
+                                android:layout_width="200dp"
+                                android:layout_height="40dp"
+                                android:textSize="20dp"
+                                android:enabled="false"/>
+                        </TableRow>
+
+                        <TableRow>
+
+                            <EditText
+                                android:id="@+id/returnaddress"
+                                android:hint="12e"
+                                android:layout_width="200dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="20dp"
+                                android:textSize="20dp"
+                                android:enabled="false"/>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="@string/returntime"
+                        android:textColor="@android:color/black"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/returnaccepted_time"
+                        android:textColor="@android:color/black"
+                        android:textSize="24dp" />
+
+                </TableRow>
+
+            </TableLayout>
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/returnremind"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/phonereturn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/phonegreen"
+                android:text="@string/phonereturn"
+                android:textColor="@android:color/white"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/next_bt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/orangered"
+                android:text="@string/nextButton"
+                android:textColor="@android:color/white"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

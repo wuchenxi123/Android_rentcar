@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.example.administrator.userrentcar.CarUsingActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="车辆使用中......"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="@android:color/holo_orange_light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前车型："
+                    android:textSize="24dp"
+                    android:textColor="@android:color/black"/>
+
+                <Spinner
+                    android:id="@+id/currentcartype"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价       格："
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="费       用："
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"/>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="当前已产生费用"
+                            android:textSize="24sp"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:id="@+id/t_currentprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="24dp"
+                            android:textColor="@android:color/holo_red_light"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yuan"
+                            android:textSize="24dp"
+                            android:textColor="@android:color/black"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="预计共产生费用"
+                            android:textSize="24dp"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:id="@+id/t_predictprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="24dp"
+                            android:textColor="@android:color/holo_red_light"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yuan"
+                            android:textSize="24dp"
+                            android:textColor="@android:color/black"/>
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/phonereturn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:background="@color/orenge"
+            android:text="电话还车"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
